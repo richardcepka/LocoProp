@@ -1,1 +1,1 @@
-Be sure you have Pytorch.
+Be sure you have PyTorch.
