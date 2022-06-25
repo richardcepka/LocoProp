@@ -1,0 +1,18 @@
+program: main.py
+method: bayes
+metric:
+  name: train_loss
+  goal: minimize
+parameters:
+  optimize: 
+    value: 'locoprop'
+  iner_solver:
+    value: 'fixed_point_iteration'
+  max_iter:
+    value: 10
+  f_type:
+    value: 'identity'
+  lambda_a:
+    values: [10, 100, 500, 1000, 3000, 5000]
+  lambda_r:
+    values: [10, 100, 1000, 10000, 100000, 1000000]
